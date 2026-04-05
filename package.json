@@ -1,24 +1,30 @@
 {
+  "name": "twitchbot",
+  "version": "1.0.0",
+  "description": "A Twitch chat bot built with tmi.js",
+  "homepage": "https://github.com/jaezeu/twitchbot#readme",
+  "bugs": {
+    "url": "https://github.com/jaezeu/twitchbot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaezeu/twitchbot.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check config.js && node --check commands.js && node --check storage.js",
+    "test": "npm run check && node --test"
+  },
   "dependencies": {
     "dotenv": "^16.0.2",
     "tmi.js": "^1.8.5"
   },
-  "name": "jazxbot",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jaezeu/jazxbot.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jaezeu/jazxbot/issues"
-  },
-  "homepage": "https://github.com/jaezeu/jazxbot#readme",
-  "description": ""
+  "devDependencies": {}
 }
