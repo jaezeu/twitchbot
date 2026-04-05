@@ -2,6 +2,13 @@
 
 This repository contains a Twitch chat bot built with tmi.js.
 
+## Prerequisites
+
+- Node.js 20+
+- npm 10+
+- A Twitch account for the bot
+- A Twitch OAuth token for chat access
+
 ## Features
 
 - Command-based replies instead of responding to every message
@@ -22,6 +29,19 @@ TWITCH_BOT_USERNAME=your_bot_username
 TWITCH_OAUTH_TOKEN=oauth:your_token_here
 ```
 
+`TWITCH_OAUTH_TOKEN` must include the `oauth:` prefix.
+
+## Setup
+
+1. Install dependencies.
+2. Create `.env` with your bot credentials.
+3. Start the bot.
+
+```bash
+npm install
+npm start
+```
+
 ## Commands
 
 - `!commands`
@@ -40,12 +60,9 @@ TWITCH_OAUTH_TOKEN=oauth:your_token_here
 
 Bot state is stored in `data/bot-state.json` and survives restarts.
 
-## Running Locally
+## Data And Security Notes
 
-```bash
-npm install
-npm start
-```
+- Do not commit your `.env` file.
 
 ## Validation
 
